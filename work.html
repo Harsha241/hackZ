@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ongoing NGO Works</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #faf5ff;
+        color: #4a0072;
+      }
+      header {
+        background-color: #e9d8fd;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 2rem;
+      }
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .ngo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+      .ngo-card {
+        background-color: white;
+        border: 1px solid #d6bcfa;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .ngo-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .ngo-card-content {
+        padding: 1rem;
+      }
+      .ngo-card h2 {
+        font-size: 1.25rem;
+        margin-top: 0;
+      }
+      .ngo-card p {
+        color: #6b46c1;
+      }
+      .button-group {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+      .button-primary {
+        background-color: #805ad5;
+        color: white;
+      }
+      .button-primary:hover {
+        background-color: #6b46c1;
+      }
+      .button-secondary {
+        border: 1px solid #805ad5;
+        color: #805ad5;
+      }
+      .button-secondary:hover {
+        background-color: #faf5ff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ongoing NGO Works</h1>
+    </header>
+    <main>
+      <div class="ngo-grid">
+        <div class="ngo-card">
+          <img src="./images/cleanwater.jpeg" alt="Clean Water Initiative" />
+          <div class="ngo-card-content">
+            <h2>Clean Water Initiative</h2>
+            <p>Providing clean and safe drinking water to rural communities.</p>
+            <div class="button-group">
+              <a href="./form-don.html" class="button button-primary">Donate</a>
+              <a href="./form-vol.html" class="button button-secondary"
+                >Volunteer</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="ngo-card">
+          <img src="./images/edu.jpeg" alt="Education for All" />
+          <div class="ngo-card-content">
+            <h2>Education for All</h2>
+            <p>
+              Supporting underprivileged children with quality education and
+              resources.
+            </p>
+            <div class="button-group">
+              <a href="./form-don.html" class="button button-primary">Donate</a>
+              <a href="./form-vol.html" class="button button-secondary"
+                >Volunteer</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="ngo-card">
+          <img src="./images/reforest.jpeg" alt="Reforestation Project" />
+          <div class="ngo-card-content">
+            <h2>Reforestation Project</h2>
+            <p>Planting trees to combat deforestation and climate change.</p>
+            <div class="button-group">
+              <a href="./form-don.html" class="button button-primary">Donate</a>
+              <a href="./form-vol.html" class="button button-secondary"
+                >Volunteer</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="ngo-card">
+          <img src="./images/health.jpeg" alt="Healthcare Outreach" />
+          <div class="ngo-card-content">
+            <h2>Healthcare Outreach</h2>
+            <p>Providing medical care and health education to remote areas.</p>
+            <div class="button-group">
+              <a href="./form-don.html" class="button button-primary">Donate</a>
+              <a href="./form-vol.html" class="button button-secondary"
+                >Volunteer</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
