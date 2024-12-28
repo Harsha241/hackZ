@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGO Success Stories</title>
+    <style>
+      :root {
+        --primary-color: #6b46c1;
+        --primary-light: #9f7aea;
+        --background-color: #f7fafc;
+        --card-background: #ffffff;
+        --text-color: #2d3748;
+        --text-light: #718096;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      .story {
+        background-color: var(--card-background);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .story:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+      .story-image {
+        position: relative;
+        height: 0;
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+        overflow: hidden;
+      }
+      .story-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      .story:hover .story-image img {
+        transform: scale(1.05);
+      }
+      .story-content {
+        padding: 1.5rem;
+      }
+      .ngo-name {
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+      }
+      .project-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+      }
+      .description {
+        color: var(--text-light);
+        margin-bottom: 1rem;
+      }
+      .impact {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid #e2e8f0;
+      }
+      .impact h3 {
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      .testimonial {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: #f3ebff;
+        border-left: 4px solid var(--primary-color);
+        font-style: italic;
+        position: relative;
+      }
+      .testimonial::before {
+        content: '"';
+        font-size: 3rem;
+        color: var(--primary-light);
+        position: absolute;
+        top: -0.5rem;
+        left: 0.5rem;
+        opacity: 0.3;
+      }
+      .testimonial-author {
+        font-size: 0.875rem;
+        color: var(--text-light);
+        margin-top: 0.5rem;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Success Stories</h1>
+    </header>
+    <main>
+      <article class="story">
+        <div class="story-image">
+          <img
+            src="./images/ruralw.jpeg"
+            alt="WaterAid - Clean Water for Ruralia"
+          />
+        </div>
+        <div class="story-content">
+          <div class="ngo-name">WaterAid</div>
+          <h2 class="project-title">Clean Water for Ruralia</h2>
+          <p class="description">
+            WaterAid implemented a comprehensive clean water project in the
+            drought-prone region of Ruralia, benefiting over 50,000 people
+            across 30 villages.
+          </p>
+          <div class="impact">
+            <h3>Impact:</h3>
+            <p>
+              Reduced waterborne diseases by 70% and increased school attendance
+              by 40% in the region.
+            </p>
+          </div>
+          <blockquote class="testimonial">
+            WaterAid's project has transformed our lives. We now have clean
+            water right in our village!
+            <footer class="testimonial-author">- Maria, Village Elder</footer>
+          </blockquote>
+        </div>
+      </article>
+
+      <article class="story">
+        <div class="story-image">
+          <img
+            src="./images/edufor.jpeg"
+            alt="EduForAll - Digital Classrooms Initiative"
+          />
+        </div>
+        <div class="story-content">
+          <div class="ngo-name">EduForAll</div>
+          <h2 class="project-title">Digital Classrooms Initiative</h2>
+          <p class="description">
+            EduForAll brought digital education to 100 underfunded schools in
+            urban slums, providing tablets, internet connectivity, and digital
+            curriculum.
+          </p>
+          <div class="impact">
+            <h3>Impact:</h3>
+            <p>
+              Improved test scores by 35% and increased high school graduation
+              rates by 25% in participating schools.
+            </p>
+          </div>
+          <blockquote class="testimonial">
+            The digital classrooms have opened up a world of knowledge for our
+            students. It's been incredible to witness their growth.
+            <footer class="testimonial-author">- John, School Principal</footer>
+          </blockquote>
+        </div>
+      </article>
+
+      <article class="story">
+        <div class="story-image">
+          <img
+            src="./images/earth.jpeg"
+            alt="GreenEarth - Community Reforestation Program"
+          />
+        </div>
+        <div class="story-content">
+          <div class="ngo-name">GreenEarth</div>
+          <h2 class="project-title">Community Reforestation Program</h2>
+          <p class="description">
+            GreenEarth worked with local communities to plant 1 million trees
+            across 5,000 acres of deforested land, creating a sustainable
+            agroforestry model.
+          </p>
+          <div class="impact">
+            <h3>Impact:</h3>
+            <p>
+              Sequestered an estimated 500,000 tons of CO2 and provided
+              sustainable livelihoods for 2,000 families.
+            </p>
+          </div>
+          <blockquote class="testimonial">
+            The reforestation program has not only restored our forests but also
+            our hope for a sustainable future.
+            <footer class="testimonial-author">
+              - Carlos, Community Leader
+            </footer>
+          </blockquote>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
